@@ -1,8 +1,9 @@
 # TODO: Créer un script pour calculer les ressources nécessaires pour assainir la Seine.
 # TODO: Importer les modules nécessaires.
-
-x = input("Quelle est le volume d'eau à assainir ? ")
-
+try:
+    x = int(input("Quelle est le volume d'eau à assainir ? "))
+except ValueError as e:
+    print("vous avex entre un mauvais truc")
 water_quantity = float(x)
 
 if water_quantity < 5:
