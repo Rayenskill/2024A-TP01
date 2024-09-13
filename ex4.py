@@ -6,10 +6,10 @@
 battery_level = int(input("Quel est le le pourcentage de votre batterie ? "))
 
 if battery_level in range(51, 101):
-    distance = battery_level * 2
+    distance = (battery_level - 50) * 2 + ((battery_level - 25) / 2) + (battery_level - 10) + (battery_level - 5) * 2.5 + (battery_level * 6)
     print(f"la distance maximale que vous pouvez parcourir est de {round(distance, 1)}km")
 elif battery_level in range(26, 51):
-    distance = battery_level / 2
+    distance = ((battery_level - 25) / 2) + (battery_level - 10) + (battery_level - 5) * 2.5 + (battery_level * 6)
     print(f"la distance maximale que vous pouvez parcourir est de {round(distance, 1)}km")
 elif battery_level in range(11, 26):
     distance = battery_level 
