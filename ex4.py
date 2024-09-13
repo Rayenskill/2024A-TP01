@@ -3,4 +3,20 @@
 #        et affiche le résultat au format "XX km".
 #        Assurez une gestion du pourcentage valide au cours de votre programme (% toujours dans [0 ; 100]).
 
-battery_level = ...
+battery_level = int(input("Quel est le le pourcentage de votre batterie ? "))
+
+if battery_level in range(51, 101):
+    distance = battery_level * 2
+    print(f"la distance maximale que vous pouvez parcourir est de {round(distance, 1)}km")
+elif battery_level in range(26, 51):
+    distance = battery_level / 2
+    print(f"la distance maximale que vous pouvez parcourir est de {round(distance, 1)}km")
+elif battery_level in range(11, 26):
+    distance = battery_level 
+    print(f"la distance maximale que vous pouvez parcourir est de {round(distance, 1)}km")
+elif battery_level in range(6, 11):
+    distance = battery_level * 2.5
+    print(f"la distance maximale que vous pouvez parcourir est de {round(distance, 1)}km")
+elif battery_level in range(0, 6):
+    distance = battery_level * 6
+    print(f"la distance maximale que vous pouvez parcourir est de {round(distance, 1)}km")
