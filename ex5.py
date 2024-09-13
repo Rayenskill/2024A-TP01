@@ -9,10 +9,8 @@ while not country.isalpha():
     
 
 code_medals = input("Entrer la chaine de caratère représentant les médailles gagnées ")
-
 code_medals.upper()
 gold = code_medals.count("G")
 silver = code_medals.count("S")
 bronze = code_medals.count("B")
-
 print(f"MÉDAILLES : \n Nombre de médailles d'or : {gold} \n Nombre de médailles d'argent : {silver} \n Nombre de médailles de bronze : {bronze}")
